@@ -1,10 +1,150 @@
-<h2>Deferrable Views</h2>
+<!-- <h2>Deferrable Views</h2>
 
-@defer () {
+@defer (on idle) {
+  <app-new-component />
+} @placeholder() {
+  <p>Mostrar antes de carregar algo. Como um skeleton</p>
+} @loading() {
+  <p>Carregando...</p>
+} @error() {
+  <p>Algo deu errado</p>
+} -->
+
+
+<!-- <h2>on timer<h2>
+@defer(on timer(1s)) {
+  <app-new-component />
+} @placeholder() {
+  <p>Mostrar antes de carregar algo.. Como um skeleton</p>
+} @loading() {
+  <p>Carregando...</p>
+} @error() {
+  <p>Algo deu errado</p>
+} -->
+
+
+<!-- <h2 style="margin-bottom: 5000px;">Deferrable views</h2>
+@defer (on viewport) {
   <app-new-component />
 } @placeholder {
   <p>Mostrar antes de carregar algo. Como um skeleton</p>
 } @loading {
+  <p>Carregando...</p>
+} @error {
+  <p>Algo deu errado</p>
+} -->
+
+<!-- <h2>Deferrable views</h2>
+@defer (on interaction) {
+  <app-new-component />
+} @placeholder {
+  <p>Mostrar antes de carregar algo. Como um skeleton</p>
+} @loading {
+  <p>Carregando...</p>
+} @error {
+  <p>Algo deu errado</p>
+}
+ -->
+
+<!-- <h2 #trigger>Deferrable views</h2>
+ @defer (on interaction(trigger)) {
+   <app-new-component />
+ } @placeholder {
+   <p>Mostrar antes de carregar algo. Como um skeleton</p>
+ } @loading {
+   <p>Carregando...</p>
+ } @error {
+   <p>Algo deu errado</p>
+ } -->
+ 
+<!--  <h2>Deferrable views</h2>
+ @defer (on hover) {
+   <app-new-component />
+ } @placeholder {
+   <p>Mostrar antes de carregar algo. Como um skeleton</p>
+ } @loading {
+   <p>Carregando...</p>
+ } @error {
+   <p>Algo deu errado</p>
+ } -->
+
+<!--  <h2>Deferrable views</h2>
+ @defer (on immediate) {
+   <app-new-component />
+ } @placeholder {
+   <p>Mostrar antes de carregar algo. Como um skeleton</p>
+ } @loading {
+   <p>Carregando...</p>
+ } @error {
+   <p>Algo deu errado</p>
+ } -->
+
+<!--  <h2>Deferrable views</h2>
+ @defer (on interaction; prefetch on idle) {
+   <app-new-component />
+ } @placeholder {
+   <p>Mostrar antes de carregar algo. Como um skeleton</p>
+ } @loading {
+   <p>Carregando...</p>
+ } @error {
+   <p>Algo deu errado</p>
+ } -->
+
+<!--  <h2 #trigger>Deferrable views</h2>
+ @defer (on interaction; prefetch on interaction(trigger)) {
+   <app-new-component />
+ } @placeholder {
+   <p>Mostrar antes de carregar algo. Como um skeleton</p>
+ } @loading {
+   <p>Carregando...</p>
+ } @error {
+   <p>Algo deu errado.</p>
+ } -->
+
+<!-- <h2>Deferrable views</h2>
+<button (click)="isTrue = true">Add True</button>
+@defer(when isTrue) {
+  <app-new-component />
+} @placeholder() {
+  <p>Mostrar antes de carregar algo. Como um skeleton</p>
+} @loading() {
+  <p>Carregando...</p>
+} @error() {
+  <p>Algo deu errado</p>
+} -->
+
+<!-- <h2>Deferrable views</h2>
+<button (click)="isTrue = true">Add True</button>
+@defer(when loadingData$) {
+  <app-new-component />
+} @placeholder() {
+  <p>Mostrar antes de carregar algo. Como um skeleton</p>
+} @loading() {
+  <p>Carregando...</p>
+} @error() {
+  <p>Algo deu errado</p>
+} -->
+
+
+<!-- WHEN -->
+
+<!-- <h2>Deferrable views</h2>
+@defer {
+  <app-new-component />
+} @placeholder(minimum 2s) {
+  <p>Mostrar antes de carregar algo. Como um skeleton</p>
+} @loading {
+  <p>Carregando...</p>
+} @error {
+  <p>Algo deu errado</p>
+} -->
+
+<h2>Deferrable views</h2>
+@defer {
+  <app-new-component />
+} @placeholder {
+  <p>Mostrar antes de carregar algo. Como um skeleton</p>
+} @loading(after 150ms; minimum 10s) {
   <p>Carregando...</p>
 } @error {
   <p>Algo deu errado</p>
